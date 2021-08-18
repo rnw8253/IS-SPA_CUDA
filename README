@@ -1,0 +1,19 @@
+IS-SPA is an implicit solvent model that was developed in the McCullagh Group. We have written several versions of IS-SPA in CUDA in attempts to highly optimize the code. A copy of my thesis chapter which discusses the difference between the 3 IS-SPA algorithms has been included in this directory.
+
+Algorithm 2 has been shown to be the most efficient for a majority of system sizes.
+
+The code can be compliled by moving into the src/ directory and running:
+make
+
+There are several directories included with different system sizes of Alanine Dipeptide (ADI) molecules. These various directories were used to create the data show in the chapter.
+
+ADI2 - 2 molecules
+ADI10 - 10 molecules
+ADI25 - 25 molecues
+ADI50 - 50 molecules
+
+ADI2_US - contains files to run Umbrella sampling of 2 molecules using the CUDA code
+
+mcADI2 and mcADI50 are directories in which I calculate the efficiency of the code for a varying number of monte carlo points per atom (nMC)
+
+plots/ contains the files I used to plot the figures shown in the chapter.  
